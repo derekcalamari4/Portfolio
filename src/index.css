@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,3 +12,91 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.g-card {
+  margin: 20px;
+}
+
+.g-card-image {
+  border-radius: 10px;
+  width: 300px;
+  height: 480 px;
+  box-shadow: 0px 0px 3px 1px #ccc;
+}
+
+.g-card-info {
+margin: 10px;
+min-height: 100px;
+}
+
+.g-card-title {
+  font-size: 24px;
+  margin: 0px;
+}
+
+.g-card-sub-title{
+  font-size: 16px;
+  margin: 0px;
+}
+
+.navbar-custom {
+  background-color: red !important;
+}
+
+.navbar-text{
+font-weight: bold;
+}
+.me3-style {
+  width:50px;
+  height: 50px;
+  justify-content: space-around;
+}
+
+.footer-custom {
+  background-color: red !important;
+}
+
+.footer-font-style {
+  font-family: 'Bell MT';
+  color: 'red';
+  font-size: '20px';
+}
+
+.navbar-brand {
+  font-family: "GillSans-Bold";
+}
+
+.link-text-style {
+font-family: "CourierNewPSMT";
+font-size: 25px;
+}
+
+.about-me-title{
+  font-family: "Arial-BoldMT";
+  font-size: 100px;
+  color: whitesmoke; 
+  text-shadow: -1px 1px 10px rgba(0, 0, 0, 0.75);
+}
+
+.about-me-content{
+  font-family: "GillSans-SemiBold";
+  font-size: 20px;
+  text-align: center;
+  padding-left:45px;
+  padding-right: 45px;
+}
+
+.aboutMe-IMG-style1{
+  width: 450px;
+  height: 200px;
+  padding-left: 30px;
+}
+
+.aboutMe-IMG-style2{
+  width:5px;
+  height:5px;
+}
+
+
+
