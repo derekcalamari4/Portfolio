@@ -13,6 +13,7 @@ import HomePage from "./pages/HomePage"
 import AboutPage from "./pages/AboutPage"
 import ContactPage from "./pages/ContactPage"
 import GalleryPage from "./pages/GalleryPage"
+import ProjectsPage from "./pages/ProjectsPage"
 
 class App extends React.Component {
 
@@ -25,7 +26,8 @@ class App extends React.Component {
         {title: "Home", path: "/"},
         {title: "About", path: "/about"},
         {title: "Contact", path: "/contact"},
-        {title: "Gallery", path: "/gallery"}
+        {title: "Gallery", path: "/gallery"},
+        {title: "Projects", path: "./projects"}
       ],
       home: {
         title: 'Welcome!',
@@ -40,9 +42,12 @@ class App extends React.Component {
     },
       gallery: {
         title: "Gallery"
+      },
+      projects: {
+        title: "Projects"
       }
-    }
   }
+}
 
 //Main header for the portfolio (react-bootstrap components)
   render(){
@@ -57,6 +62,7 @@ class App extends React.Component {
               <Link className = "nav-link link-text-style" to="/">Home</Link>
               <Link className = "nav-link link-text-style" to="/about">About</Link>
               <Link className = "nav-link link-text-style" to = "/gallery">Gallery</Link>
+              <Link className = "nav-link link-text-style" to = "/projects">Projects</Link>
               <Link className = "nav-link link-text-style" to="/contact">Contact</Link>
             <img src = {me3} className = "me3-style"alt = "me3"/>
             </Nav>
@@ -65,6 +71,7 @@ class App extends React.Component {
           <Route path = "/" exact render= {()=> <HomePage title = {this.state.home.title} subTitle = {this.state.home.subTitle} text = {this.state.home.text}/>}/>
           <Route path = "/about" exact render= {()=> <AboutPage title = {this.state.about.title} subTitle = {this.state.about.subTitle} text = {this.state.about.text}/>}/>
           <Route path = "/gallery" exact render= {()=> <GalleryPage title = {this.state.gallery.title} subTitle = {this.state.gallery.subTitle} text = {this.state.gallery.tex}/>}/>
+          <Route path = "/projects" exact render = {()=> <ProjectsPage title = {this.state.projects.titel} subTitle = {this.state.projects.subTitle} text = {this.state.text}/>}/>
           <Route path = "/contact" exact render= {()=> <ContactPage title = {this.state.contact.title} subTitle = {this.state.contact.subTitle} text = {this.state.contact.text}/>}/>
           <Footer/>
         </Container>
