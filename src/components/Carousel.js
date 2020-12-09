@@ -1,19 +1,17 @@
+//imports
 import React from "react"
 import me2 from "../assets/images/Me2.png"
 import Container from "react-bootstrap/Container"
 import Row  from "react-bootstrap/Row"
 import img2 from "../assets/images/IMG2.png"
 import img3 from "../assets/images/IMG3.png"
-
 import Card from "../components/Card"
 
 //Carousel to render Card Components
 class Carousel extends React.Component{
-
     //carousel constructor
     constructor(props){
         super(props)
-
         //state with item array
         this.state = {
                 items: [
@@ -26,12 +24,12 @@ class Carousel extends React.Component{
                         selected: false
                     },
                     {
-                    id: 1,
-                    title: "Family",
-                    subTitle: "Thanksgiving Day!",
-                    imgSrc: img2,
-                    link: "https://www.history.com/topics/thanksgiving/history-of-thanksgiving",
-                    selected: false
+                        id: 1,
+                        title: "Family",
+                        subTitle: "Thanksgiving Day!",
+                        imgSrc: img2,
+                        link: "https://www.history.com/topics/thanksgiving/history-of-thanksgiving",
+                        selected: false
                     },
                     {
                         id:2,
@@ -40,7 +38,7 @@ class Carousel extends React.Component{
                         imgSrc: img3,
                         link: "https://www.chicagobears.com/"
                     }
-                ]
+                        ]
         }
     }
 

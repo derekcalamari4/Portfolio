@@ -1,5 +1,5 @@
+//Imports
 import React from "react"
-
 import Container from "react-bootstrap/Container"
 import Col  from "react-bootstrap/Col"
 import siblings from "../assets/images/IMG5.png"
@@ -14,7 +14,6 @@ import img13 from "../assets/images/IMG13.png"
 
 //Gallery page content
 class GalleryPage extends React.Component{
-
     render(){
         return (
             <Container fluid = {true}>

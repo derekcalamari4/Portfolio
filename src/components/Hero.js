@@ -1,3 +1,4 @@
+//imports
 import React from "react"
 import Jumbotron from "react-bootstrap/Jumbotron"
 import Container from "react-bootstrap/Container"
@@ -17,9 +18,8 @@ function Hero(props){
                     </Col>
                 </Row>
             </Container>
-
         </Jumbotron>
-    )
+            )
 }
 
 export default Hero

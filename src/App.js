@@ -64,10 +64,10 @@ class App extends React.Component {
               <Link className = "nav-link link-text-style" to = "/gallery">Gallery</Link>
               <Link className = "nav-link link-text-style" to = "/projects">Projects</Link>
               <Link className = "nav-link link-text-style" to="/contact">Contact</Link>
-            <img src = {me3} className = "me3-style"alt = "me3"/>
+              <img src = {me3} className = "me3-style"alt = "me3"/>
             </Nav>
           </Navbar.Collapse>
-          </Navbar>
+        </Navbar>
           <Route path = "/" exact render= {()=> <HomePage title = {this.state.home.title} subTitle = {this.state.home.subTitle} text = {this.state.home.text}/>}/>
           <Route path = "/about" exact render= {()=> <AboutPage title = {this.state.about.title} subTitle = {this.state.about.subTitle} text = {this.state.about.text}/>}/>
           <Route path = "/gallery" exact render= {()=> <GalleryPage title = {this.state.gallery.title} subTitle = {this.state.gallery.subTitle} text = {this.state.gallery.tex}/>}/>
